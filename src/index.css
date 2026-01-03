@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #1f1f1f;
+  background: linear-gradient(145deg, #1d1d1d, #181818);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+h1, h2, h3, h4 {
+  letter-spacing: 0.2px;
+}
+
+.section-title {
+  font-size: 20px !important;
+  font-weight: 600;
+}
+
+p {
+  font-size: 13px;
+}

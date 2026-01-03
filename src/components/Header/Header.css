@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 22px;
+  background: #1f1f1f;
+  padding: 12px 22px;
+  border-radius: 16px;
+  border: 1px solid #2a2a2a;
+}
+
+.nav-tabs li {
+  list-style: none;
+  font-size: 13px;
+  color: #aaa;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-tabs li:hover {
+  color: #ffd966;
+}
+
+.nav-tabs .active {
+  color: #ffd966;
+  font-weight: 600;
+}

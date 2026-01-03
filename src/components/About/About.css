@@ -1,0 +1,34 @@
+.about-section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.underline {
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #ffd966;
+  margin-top: 6px;
+  border-radius: 2px;
+}
+
+.about-text {
+  color: #b5b5b5;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+.about-section,
+.services-section,
+.testimonials-section,
+.contact-section {
+  margin-bottom: 36px;
+}

@@ -1,0 +1,87 @@
+.resume-section {
+  margin-bottom: 36px;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+/* BLOCK */
+.resume-block {
+  background: linear-gradient(180deg, #1c1c1c, #141414);
+  border-radius: 22px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.resume-block h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.resume-block svg {
+  color: #ffd966;
+}
+
+/* TIMELINE */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.timeline-item span {
+  font-size: 11px;
+  color: #888;
+}
+
+.timeline-item h4 {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.timeline-item p {
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* SKILLS */
+.skills-section h3 {
+  font-size: 15px;
+  margin-bottom: 14px;
+}
+
+.skill {
+  margin-bottom: 14px;
+}
+
+.skill span {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.bar {
+  height: 6px;
+  background: #222;
+  border-radius: 10px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+
+.bar div {
+  height: 100%;
+  background: linear-gradient(90deg, #ffd966, #ffb347);
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .resume-grid {
+    grid-template-columns: 1fr;
+  }
+}
