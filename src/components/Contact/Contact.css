@@ -70,3 +70,8 @@
   cursor: pointer;
   font-weight: 600;
 }
+@media (max-width: 768px) {
+  .contact-cards {
+    grid-template-columns: 1fr;
+  }
+}
