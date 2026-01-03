@@ -71,7 +71,24 @@
   font-weight: 600;
 }
 @media (max-width: 768px) {
-  .contact-cards {
+  .contact-grid {
     grid-template-columns: 1fr;
   }
+
+  .contact-card {
+    text-align: center;
+  }
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+section {
+  background: transparent;
+}
+
+.card, .portfolio-card {
+  background: var(--card);
+  border-radius: 14px;
 }
