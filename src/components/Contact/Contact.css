@@ -32,6 +32,19 @@
 .contact-card p {
   font-size: 12px;
   color: #aaa;
+  cursor: pointer;
+}
+
+.contact-card a {
+  font-size: 12px;
+  color: #aaa;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact-card a:hover {
+  color: #ffd966;
+  text-decoration: underline;
 }
 
 /* FORM */

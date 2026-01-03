@@ -13,13 +13,13 @@ const Contact = () => {
         <div className="contact-card">
           <FaEnvelope />
           <h4>Email</h4>
-          <p>shuvam2065@gmail.com</p>
+          <a href="mailto:shuvam2065@gmail.com">shuvam2065@gmail.com</a>
         </div>
 
         <div className="contact-card">
           <FaPhoneAlt />
           <h4>Phone</h4>
-          <p>+91 7889000521</p>
+          <a href="tel:+917889000521">+91 7889000521</a>
         </div>
 
         <div className="contact-card">

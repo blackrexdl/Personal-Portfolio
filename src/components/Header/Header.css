@@ -5,20 +5,42 @@
 }
 
 .nav-tabs {
+  position: relative;
   display: flex;
-  gap: 22px;
-  background: #1f1f1f;
-  padding: 12px 22px;
-  border-radius: 16px;
-  border: 1px solid #2a2a2a;
+  gap: 0;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 6px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.glass-indicator {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 110px;
+  height: calc(100% - 12px);
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 30px;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 0;
 }
 
 .nav-tabs li {
   list-style: none;
+  width: 110px;
+  text-align: center;
   font-size: 13px;
-  color: #aaa;
+  color: #ccc;
   cursor: pointer;
-  transition: 0.3s;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+  position: relative;
+  z-index: 1;
 }
 
 .nav-tabs li:hover {
@@ -26,7 +48,7 @@
 }
 
 .nav-tabs .active {
-  color: #ffd966;
+  color: #111;
   font-weight: 600;
 }
 body {
@@ -41,4 +63,12 @@ section {
 .card, .portfolio-card {
   background: var(--card);
   border-radius: 14px;
+}
+
+.glass-indicator.draggable {
+  cursor: grab;
+}
+
+.glass-indicator.draggable:active {
+  cursor: grabbing;
 }
