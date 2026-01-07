@@ -29,7 +29,16 @@
   transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 0;
 }
-
+.glass-indicator {
+  transition:
+    transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.3s ease;
+}
+.glass-indicator {
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.35),
+    inset 0 1px rgba(255, 255, 255, 0.25);
+}
 .nav-tabs li {
   list-style: none;
   width: 110px;
@@ -42,7 +51,11 @@
   position: relative;
   z-index: 1;
 }
-
+.nav-tabs:hover .glass-indicator {
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.45),
+    inset 0 1px rgba(255, 255, 255, 0.3);
+}
 .nav-tabs li:hover {
   color: #ffd966;
 }
@@ -71,4 +84,23 @@ section {
 
 .glass-indicator.draggable:active {
   cursor: grabbing;
+}
+/* 🧲 Magnetic feel already handled in JS */
+
+/* 🧊 Drag states */
+.glass-indicator {
+  transition:
+    transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.3s ease;
+}
+
+/* Disable drag while scrolling */
+.glass-indicator.disabled {
+  cursor: default;
+  opacity: 0.85;
+}
+
+/* Keyboard focus polish */
+.nav-tabs li:focus {
+  outline: none;
 }

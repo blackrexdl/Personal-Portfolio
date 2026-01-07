@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
-
+import useMagnetic from "./hooks/useMagnetic";
+import GlassCursor from "./components/GlassCursor/GlassCursor";
 import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
@@ -12,10 +13,18 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import Resume from "./components/Resume/Resume";
 
 function App() {
-  const [activeTab, setActiveTab] = useState("About");
+  useMagnetic();
+  const [activeTab, setActiveTab] = useState(() => {
+    return localStorage.getItem("activeTab") || "About";
+  });
+
+  useEffect(() => {
+    localStorage.setItem("activeTab", activeTab);
+  }, [activeTab]);
 
   return (
     <div className="app-wrapper">
+      <GlassCursor />
       <aside className="sidebar">
         <Navbar />
       </aside>
