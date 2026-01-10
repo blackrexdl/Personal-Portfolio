@@ -116,7 +116,7 @@ Some sections may not yet be optimized for large-scale production use.
 
 ## 👤 Author
 
-Created with ❤️ by **Me**
+Created with ❤️ by **Shubham Sharma**
 
 ---
 
