@@ -1,37 +1,64 @@
 .about-section {
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
+/* TITLE */
 .section-title {
   font-size: 22px;
   font-weight: 600;
   color: #fff;
   position: relative;
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .underline {
   display: block;
-  width: 40px;
+  width: 42px;
   height: 3px;
   background-color: #ffd966;
   margin-top: 6px;
   border-radius: 2px;
 }
 
+/* TEXT */
 .about-text {
   color: #b5b5b5;
   font-size: 14px;
-  line-height: 1.8;
+  line-height: 1.75;
   margin-bottom: 14px;
+  max-width: 680px;
 }
-.about-section,
-.services-section,
-.testimonials-section,
-.contact-section {
-  margin-bottom: 36px;
+
+/* WRAPPER */
+.about-wrapper {
+  display: flex;
+  gap: 32px;
+  align-items: center;
 }
+
+/* IMAGE */
+.about-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 20px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .about-wrapper {
+    gap: 26px;
+  }
+
+  .about-image {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
   .about-wrapper {
     flex-direction: column;
@@ -40,12 +67,48 @@
   }
 
   .about-image {
-    width: 160px;
-    height: 160px;
-    margin: auto;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
   }
 
   .about-text {
-    font-size: 14px;
+    font-size: 13px;
+    max-width: 100%;
   }
+}
+
+/* Small Mobile */
+@media (max-width: 420px) {
+  .section-title {
+    font-size: 20px;
+  }
+
+  .about-image {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+/* Large Displays */
+@media (min-width: 1600px) {
+  .about-text {
+    max-width: 760px;
+    font-size: 15px;
+  }
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+section {
+  background: transparent;
+}
+
+.card,
+.portfolio-card {
+  background: var(--card);
+  border-radius: 14px;
 }
